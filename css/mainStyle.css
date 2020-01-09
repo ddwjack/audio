@@ -1,0 +1,789 @@
+/*字体初始化*/
+@media only screen and (max-width: 340px) and (min-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 380px) and (min-width: 340px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 410px) and (min-width: 380px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 440px) and (min-width: 410px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 470px) and (min-width: 440px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 470px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+}
+/*全局样式*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/*初始化html,body*/
+#kaijiangIndex{
+  width: 100%;
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+  color: #444b4d;
+  font-family: "微软雅黑";
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  position: relative;
+}
+/*清除浮动*/
+#kaijiangIndex .clear {
+  clear: both;
+}
+/*隐藏元素*/
+ #kaijiangIndex .pause {
+  display: none;
+} 
+#kaijiangIndex .hide{
+  display: block;
+}
+/* iconfont ,样式初定义*/
+@font-face {
+  font-family: "iconfont";
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/iconfont.woff') format('woff'), /* chrome、firefox */ url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../font/iconfont.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+#kaijiangIndex .iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*icon定义结束*/
+#kaijiangIndex .mian_con {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4rem 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+#kaijiangIndex .con_mainUP {
+  width: 100%;
+  /*height: 100%;*/
+  /*height: 93%;*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4rem 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-size: 100% 100%;*/
+  background:#fff;
+}
+#kaijiangIndex .con_mainDown {
+  width: 100%;
+  /*height: 100%;*/
+  height:94%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4rem 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background: #fff;
+  transform: translate3D(0, 100%, 0);
+  -webkit-transform: translate3D(0, 100%, 0);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  z-index: 3;
+}
+/* #kaijiangIndex .conUp_header {
+  width: 100%;
+  height: 104px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 1rem #ececec;
+  background:linear-gradient(90deg,rgba(144,19,254,1) 0%,rgba(113,210,255,1) 100%);
+  color: #fff;
+  font-size: 16px;
+  padding:0 3%;
+} */
+#kaijiangIndex .con_footer {
+  width: 91.4%;
+  height: 56px;
+  position: fixed;
+  left: 0;
+  color: #444b4d;
+  bottom:66px;
+  background:rgba(0,0,0,0.5);
+  margin: 0 16px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#kaijiangIndex .con_container {
+  width: 100%;
+  /*height: 90%;*/
+  /*overflow: hidden;*/     
+  position: relative;   
+  /*overflow-y: auto;*/
+  top:44px;
+  background: #fff;
+  padding-bottom: 50px;
+}
+#containe,#pageA{
+    height: 100%;
+}
+#kaijiangIndex .pageA_title {
+  width: 100%;
+  height: 100%;
+  padding: 0 4rem;
+  text-align: center;
+  line-height: 3rem;
+}
+#kaijiangIndex .moreThat {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 4rem;
+}
+#kaijiangIndex .moreThat i {
+  font-size: 1.8rem;
+}
+#kaijiangIndex .pageTimeLine {
+  /*width: 70%;*/
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 9;
+  /*background-color: #dcc4c1;*/
+  transform: translate(-50%);
+}
+#kaijiangIndex #pageA_timeLine:after{
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 100%;
+    top: -12px;
+}
+#kaijiangIndex .pageTimeLine div {
+  width: 0;
+  height: 100%;
+  /*background-color: #ff6d70;*/
+  background:linear-gradient(270deg,rgba(113,210,255,1) 0%,rgba(200,109,215,1) 100%);
+}
+#kaijiangIndex .pageA_singerImg {
+    width: 3.3rem;
+    height: 3.3rem;
+    position: absolute;
+    left: 3%;
+    padding: 0;
+    top: 9px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #fff;
+}
+#kaijiangIndex .pageA_singerImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#kaijiangIndex .nowSong_information {
+  width: 100%;
+  height: 100%;
+  padding: 9px 6rem 9px 5.8rem;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+#kaijiangIndex #nowSong_information{
+  /*width:80%;*/
+}
+#kaijiangIndex .nowSong_information #pageA_singerName,#kaijiangIndex .nowSong_information #pageA_songName{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  height: 100%; */
+}
+#kaijiangIndex .nowSong_information #pageA_songName{
+    color:#D8D8D8;
+}
+#kaijiangIndex .nowSong_information p:first-child {
+  /*margin-top: 0.2rem;*/
+  font-size: 1.2rem;
+  color: #fff;
+}
+#kaijiangIndex .pageA_musicElemnt {
+    width: 3rem;
+    height: 84%;
+    position: absolute;
+    right: 3%;
+    top: 10px;
+}
+#kaijiangIndex .pageA_musicElemnt span {
+  height: 100%;
+  float: left;
+  margin-right: 0.2rem;
+  line-height: 4rem;
+}
+#kaijiangIndex .pageA_musicElemnt span i {
+  font-size: 1.8rem;
+  
+}
+.blocks{display: inline-block;}
+#kaijiangIndex .pageA_musicElemnt span .lef{
+  background:url(../images/audio/left1.png) no-repeat;
+  background-size:100% 100%;
+  width: 38px;
+  height:38px;
+  transform: rotate(180deg);
+}
+#kaijiangIndex .pageA_musicElemnt span .pause{
+  background:url(../images/audio/bofang1_01.png) no-repeat;
+  background-size:100% 100%;
+  width: 3rem;
+  height:3rem;
+  /*margin-top: 4px;*/
+}
+#kaijiangIndex .pageA_musicElemnt span .righs{
+  background:url(../images/audio/right1.png) no-repeat;
+  background-size:100% 100%;
+  width: 38px;
+  height:38px;
+}
+#kaijiangIndex .pageA_musicElemnt span .play{
+  background:url(../images/audio/zanting_01.png) no-repeat;
+  background-size:100% 100%;
+  width: 3rem;
+  height:3rem;
+  /*margin-top: 4px;*/
+  /*display: inline-block!important;*/
+}
+#kaijiangIndex .misicClassList {
+  width: 100%;
+  /*padding: 5px;*/
+  list-style: none;
+}
+#kaijiangIndex .misicClassList li {
+  float: left;
+  padding: 5px;
+  height: 181px;
+  width: 33.3%;
+  line-height: 111px;
+}
+#kaijiangIndex .misicClassList span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f1f1f5;
+}
+#i_text{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    line-height: 28px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 14px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#kaijiangIndex .misicClassList .showNow span {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#kaijiangIndex .misicClassList .playNow span {
+  background-image: url(../images/icon/music_30.png);
+  background-repeat: no-repeat;
+  background-position: -0.5rem 0.1rem;
+  background-size: 3rem 3rem;
+}
+#kaijiangIndex .returnOnePage {
+  width: 4rem;
+  height: 3rem;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height:3rem;
+  font-size: 1.3rem;
+}  
+#kaijiangIndex .pageB_songName {
+  width: 100%;
+  padding: 0 4rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: .1rem;
+  color: #fff;
+}
+#kaijiangIndex .pageB_singerName {
+  width: 100%;
+  padding: 0 4rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #fff;
+}
+#kaijiangIndex .pageB_songName:after {
+  clear: both;
+}
+#kaijiangIndex .songList {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  list-style: none;
+  border-top:1px solid #f1f1f5;
+}
+#kaijiangIndex .songList li {
+  /*height: 3rem;*/
+  position: relative;
+  border-bottom: 1px solid #f1f1f5;
+  width: 100%;
+}
+#kaijiangIndex .songList .liback:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    left:0;
+    background:rgba(0,0,0,0.3);
+    top:0;
+}
+.licolor>a{
+    color: #ff2e5d;
+}
+/* #kaijiangIndex .liback .ul_list_two{
+    display: block;
+    opacity: 1;
+    transition: 2s;
+    transition:2s;
+} */
+#kaijiangIndex .ul_list_two{
+    display: none;
+    /*opacity: 0;*/
+    border-top:1px solid #f1f1f5;
+    /*margin-top: 4px;*/
+    /*transition:1s;*/
+    /*transition: 2s;*/
+}
+#kaijiangIndex .li_list_two{
+    height: 44px;
+    line-height: 44px;
+    padding-left: 4rem;
+}
+#kaijiangIndex .songList .liActive{
+    background:rgba(0,0,0,0.3); 
+}
+#kaijiangIndex .songList .songNumber {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 3rem;
+  text-align: center;
+  color: #444b4d;
+}
+#kaijiangIndex .songList .thisHeart {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 3rem;
+}
+#kaijiangIndex .songList .div_play{
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+#kaijiangIndex .div_play .iconfont{
+    font-size: 2rem;
+}
+#kaijiangIndex .songList .thisHeart i {
+  font-size: 1.5rem;
+}
+#kaijiangIndex .songList .Find {
+  color: red;
+}
+#kaijiangIndex .songList li:last-child {
+  border-bottom: none;
+}
+#kaijiangIndex .songListInformation {
+  width: 100%;
+  height: 100%;
+  padding: 0.1rem 3rem;
+}
+#kaijiangIndex .songListInformation p {
+  overflow: hidden;
+}
+#kaijiangIndex .songListInformation p:first-child {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+}
+#kaijiangIndex .songListInformation p:last-child {
+  font-size: 0.7rem;
+}
+#kaijiangIndex .paluMode {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 4rem;
+  text-align: center;
+}
+#kaijiangIndex .paluMode i {
+  font-size: 1.8rem;
+  display: none;
+}
+#kaijiangIndex .paluMode i:first-child {
+  display: inline;
+}
+#kaijiangIndex .nowHeart {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 4rem;
+}
+#kaijiangIndex .nowHeart i {
+  font-size: 1.6rem;
+  display: none;
+}
+#kaijiangIndex .nowHeart i:first-child {
+  display: block;
+}
+#kaijiangIndex .nowHeart .red {
+  color: red;
+}
+#kaijiangIndex .pageB_play {
+  width: 100%;
+  height: 100%;
+  padding: 0 4rem;
+  text-align: center;
+  line-height: 4rem;
+}
+#kaijiangIndex .pageB_play span {
+  padding: 0 0.2rem;
+}
+#kaijiangIndex .pageB_play i {
+  font-size: 1.8rem;
+}
+#kaijiangIndex .pageB_play .playB_playStop i {
+  font-size: 2rem;
+}
+#kaijiangIndex .pageB_play .playB_playStop i:nth-child(2) {
+  display: none;
+}
+#kaijiangIndex .pageB_line {
+  width: 100%;
+  height: 0.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#kaijiangIndex .pageB_line div {
+  width: 0;
+  height: 100%;
+  background-color: #ff6d70;
+}
+#kaijiangIndex .songTime {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0 3%;
+}
+#kaijiangIndex .songTimes{
+  /*top: -10px;*/
+  z-index: 0;
+}
+#kaijiangIndex .songTime .nowTime {
+  float: left;
+  color:#C86DD7;
+}
+#kaijiangIndex .songTime .allTime {
+  float: right;
+  color: #9B9B9B;
+}
+#kaijiangIndex .pageB_nowPage {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  text-align: center;
+  line-height: 0.5rem;
+}
+#kaijiangIndex .pageB_nowPage span {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+#kaijiangIndex .pageB_nowPage .active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#kaijiangIndex .pageBArr {
+  width: 100%;
+  height: 100%;
+}
+#kaijiangIndex .lyrics_list {
+  width: 100%;
+  list-style: none;
+  transform: translate3D(0, 50%, 0);
+  -webkit-transform: translate3D(0, 50%, 0);
+}
+#kaijiangIndex .lyrics_list li {
+  height: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+#kaijiangIndex .lyrics_list .active {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+#kaijiangIndex .pageB_SingerImg {
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  margin-top: -7.5rem;
+  margin-left: -7.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem #000;
+  -webkit-box-shadow: 0 0 2rem #000;
+}
+#kaijiangIndex .pageB_SingerImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+@keyframes Runing {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes Runing {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+#kaijiangIndex .Warming {
+  transform: translate3D(110%, 0, 0);
+  -webkit-transform: translate3D(110%, 0, 0);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+#kaijiangIndex .warming_con {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+  font-size: 0.8rem;
+  text-align: Justify;
+  text-justify: inter-ideograph;
+}
+#kaijiangIndex .warming_con h3 {
+  padding-top: 0.5rem;
+  font-weight: normal;
+}
+#kaijiangIndex .warming_con ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+#kaijiangIndex .warming_con ul li {
+  margin-top: 0.3rem;
+  text-indent: 1rem;
+}
+#kaijiangIndex .warming_con ul li:first-child {
+  margin-top: 0;
+}
+#kaijiangIndex .returnMain {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  line-height: 4rem;
+}
+#kaijiangIndex .returnMain i {
+  font-size: 1.5rem;
+}
+#kaijiangIndex .lodingCon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../images/pageBg/load.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+}
+#kaijiangIndex .affrimLoad {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  right: 4rem;
+  top: 10rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
+  display: none;
+}
+#kaijiangIndex .affrimLoad div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
+}
+#kaijiangIndex .affrimLoad div:nth-child(1) {
+  animation: makeBig 4s linear infinite;
+  -webkit-animation: makeBig 4s linear infinite;
+}
+#kaijiangIndex .affrimLoad div:nth-child(2) {
+  animation: makeBigB 4s linear infinite;
+  -webkit-animation: makeBigB 4s linear infinite;
+}
+#kaijiangIndex .affrimLoad span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 1.5rem;
+}
+@keyframes makeBig {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+}
+@-webkit-keyframes makeBig {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+}
+@keyframes makeBigB {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+  }
+}
+@-webkit-keyframes makeBigB {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+  }
+}

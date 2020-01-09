@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>deta详情</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="divHead margTopX" id="mission">
+        <p id="misXurl"></p>
+        <header class="head_vid margTopX" style="border:0;">
+            <div class="center">
+                <i class="miss_fan" id="p_fan"></i>
+                <p class="center">任務中心</p>
+            </div>
+        </header>
+        <section class="sec_free">
+            <img class="w100 imbj_rad" src="images/my/Mask.png" alt="#">
+        </section>
+        <section class="miss_sec_ren w100">
+            <div class="mission_title">
+                <img id="img_pic" class="fl img" src="images/room/log.png" alt="#">
+                <p class="p_text"><span id="p_VIP" class="sp_grade fl">Lv.1</span> <span id="sp_exp">10000/20000</span></p>
+                <p class="p_mrx"><i id="i_pro_bi" class="i_solid"></i></p>
+            </div>
+            <div class="mission_cont">
+                <div>
+                    <p class="p_ljqd">累計簽到：<span id="p_day">1</span>天</p>
+                    <ul id="ul_jibie_lt" class="ul_mis_lsit">
+                        <p class="p_wid_bai"></p>
+                        <li class="li_mission"><img class="img_mission" src="images/me/day1.png" alt="#"><p>1天</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="ul_mis_cont">
+                        <li class="li_images"><img class="imags" src="images/me/qd.png" alt="#"></li>
+                        <li class="li_tex">
+                            <b class="b_qd">點擊簽到</b>
+                            <p class="p_jy">今日獲得經驗</p>
+                        </li>
+                        <li class="li_rig fr" id="sp_qiandao" ><a class="A_tap" href="javascript:void(0)">簽到</a></li>
+                    </ul>
+                    <ul class="ul_mis_cont" style="display: none;">
+                        <li class="li_images"><img class="imags" src="images/me/chongzhi.png" alt="#"></li>
+                        <li class="li_tex">
+                            <b class="b_qd">充值達人</b>
+                            <p class="p_jy">有錢就是任性</p>
+                        </li>
+                        <li class="li_rig fr" data-t="Lmoney"><a class="A_tap" href="javascript:void(0)">去充值</a></li>
+                    </ul>
+                    <ul class="ul_mis_cont" style="display: none;">
+                        <li class="li_images"><img class="imags" src="images/me/songliwu.png" alt="#"></li>
+                        <li class="li_tex">
+                            <b class="b_qd">送禮物</b>
+                            <p class="p_jy">今日獲得<span id="sp_gift"></span>經驗</p>
+                        </li>
+                        <li class="li_rig fr" data-t="Lgift"><a class="A_tap" href="javascript:void(0)">去送禮</a></li>
+                    </ul>
+                    <ul class="ul_mis_cont">
+                        <li class="li_images"><img class="imags" src="images/me/guanggao.png" alt="#"></li>
+                        <li class="li_tex">
+                            <b class="b_qd">點擊廣告</b>
+                            <p class="p_jy">今日獲得<span id="sp_guan"></span>經驗</p>
+                        </li>
+                        <li class="li_rig fr" data-t="Lbann"><a class="A_tap" href="javascript:void(0)">看廣告</a></li>
+                    </ul>
+                    <ul class="ul_mis_cont">
+                        <li class="li_images"><img class="imags" src="images/me/fenxiang.png" alt="#"></li>
+                        <li class="li_tex">
+                            <b class="b_qd">分享好友</b>
+                            <p class="p_jy">今日獲得<span id="sp_fenx"></span>經驗</p>
+                        </li>
+                        <li class="li_rig fr" data-t="Lfxian"><a class="A_tap" href="javascript:void(0)">去分享</a></li>
+                    </ul>
+                    <ul class="ul_mis_cont" style="display: none;">
+                        <li class="li_images"><img class="imags" src="images/me/zhibo.png" alt="#"></li>
+                        <li class="li_tex">
+                            <b class="b_qd">參與直播</b>
+                            <p class="p_jy">今日獲得<span id="sp_cany"></span>經驗</p>
+                        </li>
+                        <li class="li_rig fr" data-t="Lgift"><a class="A_tap" href="javascript:void(0)">看直播</a></li>
+                    </ul>
+                    <ul class="ul_mis_cont" style="display: none;">
+                        <li class="li_images"><img class="imags" src="images/me/guanzhu.png" alt="#"></li>
+                        <li class="li_tex">
+                            <b class="b_qd">關注主播</b>
+                            <p class="p_jy">今日獲得<span id="sp_gzhu"></span>經驗</p>
+                        </li>
+                        <li class="li_rig fr" data-t="Lgift"><a class="A_tap" href="javascript:void(0)">去關注</a></li>
+                    </ul>
+                    <ul class="ul_mis_cont">
+                        <li class="li_images"><img class="imags" src="images/me/shipin-5.png" alt="#"></li>
+                        <li class="li_tex">
+                            <b class="b_qd">看視頻</b>
+                            <p class="p_jy">今日獲得<span id="sp_vide"></span>經驗</p>
+                        </li>
+                        <li class="li_rig fr" data-t="Lvidk"><a class="A_tap" href="javascript:void(0)">看視頻</a></li>
+                    </ul>
+                    <ul class="ul_mis_cont">
+                        <li class="li_images"><img class="imags" src="images/me/book.png" alt="#"></li>
+                        <li class="li_tex">
+                            <b class="b_qd">聽書</b>
+                            <p class="p_jy">今日獲得<span id="sp_book"></span>經驗</p>
+                        </li>
+                        <li class="li_rig fr" data-t="Lbooks"><a class="A_tap" href="javascript:void(0)">聽小說</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="miss_sec_ren">
+            <div class="div_mis_fff">
+                <ul class="ul_mis_hed">
+                    <li class="li_mis_hed w27">
+                        <img id="img_myuser" class="img_mis_nam" src="images/me/hg_wd1_07.png" alt="#">
+                    </li>
+                    <li class="li_mis_hed w39">
+                        <p id="p_VIP" class="p_jinie">V8</p>
+                        <p class="p_jindu"><span class="sp_solid"><i id="i_pro_bi" class="i_solid"></i></span><br/><span id="sp_exp">2750/5500</span></p>
+                    </li>
+                    <li class="li_mis_hed w34">
+                        <p id="p_day">累計簽到：7天</p>
+                    </li>
+                </ul>
+                <ul id="ul_jibie_lt" class="ul_mis_lsit">
+                    <p class="p_wid_bai"></p>
+                    <li class="li_mission"><img class="img_mission" src="images/me/day1.png" alt="#"><p>1天</p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec_list_mison">
+            <div class="div_list_miss">
+                <ul class="ulList">
+                    <li class="li_left"><span class="spa_lef">點擊簽到</span></li>
+                    <li id="sp_qiandao" class="li_righ"><span>今日獲得經驗</span><span class="sp_qdao">簽到</span></li>
+                </ul>
+                <ul class="ulList">
+                    <li class="li_left"><span class="spa_lef">充值達人</span></li>
+                    <li data-t="Lmoney" class="li_righ">有錢就是任性<span class="sp_qdao">去完成</span></li>
+                </ul>
+                <ul class="ulList">
+                    <li class="li_left"><span class="spa_lef">送禮物</span></li>
+                    <li data-t="Lgift" class="li_righ">今日获得<span id="sp_gift"></span>经验<span class="sp_qdao">去送礼</span></li>
+                </ul>
+                <ul class="ulList">
+                    <li class="li_left"><span class="spa_lef">点击广告</span></li>
+                    <li data-t="Lbann" class="li_righ">今日获得<span id="sp_guan"></span>经验<span class="sp_qdao">去完成</span></li>
+                </ul>
+                <ul class="ulList">
+                    <li class="li_left"><span class="spa_lef">分享好友</span></li>
+                    <li data-t="Lfxian" class="li_righ">今日获得<span id="sp_fenx"></span>经验<span class="sp_qdao">去分享</span></li>
+                </ul>
+                <ul class="ulList">
+                    <li class="li_left"><span class="spa_lef">参与直播</span></li>
+                    <li data-t="Lgift" class="li_righ">今日获得<span id="sp_cany"></span>经验<span class="sp_qdao">去完成</span></li>
+                </ul>
+                <ul class="ulList">
+                    <li class="li_left"><span class="spa_lef">关注主播</span></li>
+                    <li data-t="Lgift" class="li_righ">今日获得<span id="sp_gzhu"></span>经验<span class="sp_qdao">去完成</span></li>
+                </ul>
+                <ul class="ulList">
+                    <li class="li_left"><span class="spa_lef">看视频</span></li>
+                    <li data-t="Lvidk" class="li_righ">今日获得<span id="sp_vide"></span>经验<span class="sp_qdao">去完成</span></li>
+                </ul>
+                <ul class="ulList">
+                    <li class="li_left"><span class="spa_lef">听书</span></li>
+                    <li data-t="Lbooks" class="li_righ">今日获得<span id="sp_book"></span>经验<span class="sp_qdao">去完成</span></li>
+                </ul>
+            </div>
+        </section> -->
+    </div>
+</body>
+</html>

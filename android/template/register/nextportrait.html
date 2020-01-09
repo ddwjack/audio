@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+</head>
+<body>
+    <div class="wraNext margTopX" id="nextportrait">
+        <header class="head_vid margTopX">
+            <div class="center">
+                <p><i class="portraitFan" id="p_fan"></i>选择头像</p>
+                <a data-t="Asub" class="A_next" href="javascript:void(0)">提交</a>
+            </div>
+        </header>
+        <section class="sec_port">
+            <ul>
+                <li id="LiCrop" class="porti_li center">
+                    <img class="img_xj" src="images/register/zxj.png" alt="">
+                    <!-- <input id="filetg" class="uploadImg" type="file" accept="image/*" /> -->
+                    <form  id="ShearPhotoForm" enctype="multipart/form-data" method="post"  target="POSTiframe"> 
+                        <input name="shearphoto" type="hidden" value="我要传参数" autocomplete="off"> <!--示例传参数到服务端，后端文件UPLOAD.php用$_POST['shearphoto']接收,注意：HTML5切图时，这个参数是不会传的-->
+                        <a href="javascript:;" id="selectImage"><input id="inp_subt" type="file"  name="UpFile" autocomplete="off"/></a>
+                    </form> 
+                </li>
+                <li class="porti_li center">
+                    <span id="show_pic"><img id="show" class="img_w10" src="images/my/video.png" alt=""></span>
+                </li>
+            </ul>
+            <div id="shearphoto_main">
+                <div class="primary"> 
+                    <!--main范围开始-->
+                    <div id="main">
+                        <div class="point"></div>
+                <!--选择加载图片方式开始-->
+                        <div id="SelectBox">
+                            <!-- <form  id="ShearPhotoForm" enctype="multipart/form-data" method="post"  target="POSTiframe"> 
+                                          <input name="shearphoto" type="hidden" value="我要传参数" autocomplete="off"> 示例传参数到服务端，后端文件UPLOAD.php用$_POST['shearphoto']接收,注意：HTML5切图时，这个参数是不会传的
+                                          <a href="javascript:;" id="selectImage"><input type="file"  name="UpFile" autocomplete="off"/></a>
+                                      </form>  -->          
+                        </div>
+                <!--选择加载图片方式结束- -->
+                        <div id="relat">
+                            <div id="black"></div>
+                            <div id="movebox">
+                                <div id="smallbox">
+                                        <img src="shearphoto_common/images/default.gif" class="MoveImg" /><!--截框上的小图-->
+                                </div>
+                                <!--动态边框开始-->
+                                 <i id="borderTop">
+                                </i>
+                                
+                                <i id="borderLeft">
+                                </i>
+                                
+                                <i id="borderRight">
+                                </i>
+                                
+                                <i id="borderBottom">
+                                </i>
+                                <!--动态边框结束-->
+                                <i id="BottomRight">
+                                </i>
+                                <i id="TopRight">
+                                </i>
+                                <i id="Bottomleft">
+                                </i>
+                                <i id="Topleft">
+                                </i>
+                                <i id="Topmiddle">
+                                </i>
+                                <i id="leftmiddle">
+                                </i>
+                                <i id="Rightmiddle">
+                                </i>
+                                <i id="Bottommiddle">
+                                </i>
+                        </div>
+                        <img src="shearphoto_common/images/default.gif" class="BigImg" /><!--MAIN上的大图-->
+                </div>
+        </div>
+         <!--main范围结束-->  
+          <div style="clear: both"></div>
+        <!--工具条开始-->
+        <div id="Shearbar">
+                <div class="ZoomDist" id="ZoomDist">
+                        <div id="Zoomcentre">
+                        </div>
+                        <div id="ZoomBar"> 
+                        </div>
+                        <span class="progress">
+                        </span>
+                </div>
+                
+                <p class="Psava">
+                        <!-- <a id="againIMG"  href="javascript:;">重新选择</a> -->
+                        <a id="saveShear" href="javascript:;">保存截图</a>
+                </p>
+        </div>
+        <!--工具条结束-->
+    </div>   
+    <div style="clear: both"></div>
+    </div>
+            <!-- <div id="portatouxa" style="display: none;">
+                <div id="label">
+                    <canvas id="get_image"></canvas>
+                    <p>
+                        <canvas id="cover_box"></canvas>
+                        <canvas id="edit_pic"></canvas>
+                    </p>
+                </div>
+                <p>
+                    <span style="display: none" id="show_edit"></span>
+                </p>
+                <p id="save_button">保存</p>
+            </div> -->
+        </section>
+    </div>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+</head>
+<body>
+    <div class="wraNext" id="nextportrait">
+        <header class="head_vid" style="border:0;">
+            <div class="center">
+                <p><i class="portraitFan" id="p_fan"></i>选择头像</p>
+                <a data-t="Asub" class="A_next" href="javascript:void(0)">提交</a>
+            </div>
+        </header>
+        <section class="sec_port">
+            <ul>
+                <li class="porti_li center">
+                    <img class="img_xj" src="images/register/zxj.png" alt="">
+                    <input id="file" onchange="changepic(this)" type="file" name="file" accept="image/*" mutiple="mutiple">
+                </li>
+                <li class="porti_li center"><img id="show" class="img_w10" src="" alt=""></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html> -->

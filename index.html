@@ -1,0 +1,538 @@
+<!DOCTYPE HTML>
+<html >
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no, viewport-fit=contain" /> -->
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="viewport" content="width=device-width, viewport-fit=cover">
+<title></title>
+ 
+<link rel="stylesheet" href="css/global.css"/> 
+<link rel="stylesheet" href="css/index.css"/>
+<link rel="stylesheet" href="css/login.css"/>
+<link rel="stylesheet" href="css/activity.css"/>  
+<link rel="stylesheet" href="css/dropload.min.css"/>
+<link rel="stylesheet" href="css/layer.css"/>
+<link rel="stylesheet" href="css/dialog.css"/>
+
+<link rel="stylesheet" href="css/mobile-select-area.css"/>
+<link rel="stylesheet" href="css/mobiscroll.select.min.css"/>
+<link rel="stylesheet" href="css/my.css"/> 
+<link rel="stylesheet" href="css/find.css"/> 
+<link rel="stylesheet" href="css/channel.css"/> 
+<link rel="stylesheet" href="css/home.css"/>
+<link rel="stylesheet" type="text/css" href="css/swiper3.06.min.css">
+<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<link rel="stylesheet" type="text/css" href="css/mobiscroll_date.css">
+<link rel="stylesheet" type="text/css" href="css/LArea.css">
+<link rel="stylesheet" type="text/css" href="css/cropper.min.css">
+<link rel="stylesheet" type="text/css" href="css/ShearPhoto.css">
+
+
+<!-- <link rel="stylesheet" href="css/video.css"/>  -->
+
+<!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+<!-- <script src="js/swiper/swiper.min.js"></script> -->
+<!-- <script src="js/swiper/swiper-3.4.2.jquery.min.js"></script>-->
+<script>
+    var ConfigObj = {
+        platForm: 'web', // web 平台
+        isDebug: false // 设为 true 表示是测试环境   
+//      version: '1.0.0'
+    }
+</script>
+
+<!-- <script src="lib/html5media.min.js"></script> -->
+<!-- <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script> -->
+    <!-- <script type="text/javascript" src="lib/jquery.min.js"></script>     -->
+
+<script type="text/javascript" src="lib/tool/base64.js"></script>
+<script type="text/javascript" src="lib/tool/md5.js"></script>
+<script type="text/javascript" src="lib/zepto/zepto.js"></script>
+<script type="text/javascript" src="lib/zepto/touch.js"></script>
+<script type="text/javascript" src="lib/zepto/fx.js"></script>
+<script type="text/javascript" src="lib/zepto/fx_methods.js"></script>
+<script type="text/javascript" src="lib/zepto/alertmsg.js"></script>
+<script type="text/javascript" src="lib/zepto/deferred.js"></script>
+<script type="text/javascript" src="lib/zepto/callbacks.js"></script>
+<script type="text/javascript" src="lib/plugin/aes_1.js"></script>
+<script type="text/javascript" src="lib/plugin/aes.js"></script>
+<script type="text/javascript" src="lib/plugin/swipeslide.js"></script>
+<script type="text/javascript" src="lib/plugin/circular-progress.js"></script>
+<script type="text/javascript" src="lib/plugin/iscroll.js"></script>
+<script type="text/javascript" src="lib/plugin/dropload.js"></script>
+<!-- <script type="text/javascript" src="lib/plugin/dropload.min.js"></script> -->
+
+<script type="text/javascript" src="lib/plugin/cityPicker.js"></script>
+<script type="text/javascript" src="lib/plugin/layer.m.js"></script>
+<script type="text/javascript" src="lib/plugin/lrz/lrz.bundle.js"></script>
+<script type="text/javascript" src="lib/plugin/dialog.js"></script>
+<script type="text/javascript" src="lib/plugin/mobile-select-area.js"></script>
+<script type="text/javascript" src="lib/plugin/mobiscroll.js"></script>
+<script type="text/javascript" src="lib/polyfill/es6.js"></script>
+
+<script type="text/javascript" src="lib/controller/pageController.js"></script>
+<script type="text/javascript" src="lib/controller/global.js"></script>
+
+
+<script type="text/javascript" src="lib/ShearPhoto.js"></script>
+<script type="text/javascript" src="lib/utf.js"></script>
+
+<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/user/login.js"></script>
+<script type="text/javascript" src="js/kaijiang/kaijiangIndex.js"></script>
+<script type="text/javascript" src="js/football/football.js"></script>
+<script type="text/javascript" src="js/user/userCenter.js"></script>
+<script type="text/javascript" src="js/user/hedSetup.js"></script>
+<script type="text/javascript" src="js/user/protocol.js"></script> 
+<script type="text/javascript" src="js/user/myNotice.js"></script> 
+<script type="text/javascript" src="js/user/feedback.js"></script>  
+<script type="text/javascript" src="js/user/extension.js"></script>  
+<script type="text/javascript" src="js/user/mycode.js"></script>  
+<script type="text/javascript" src="js/user/mypromotion.js"></script>  
+<script type="text/javascript" src="js/user/Offline.js"></script>  
+<script type="text/javascript" src="js/user/details.js"></script>   
+<script type="text/javascript" src="js/user/mylove.js"></script>    
+<script type="text/javascript" src="js/user/Account.js"></script>    
+<script type="text/javascript" src="js/user/records.js"></script>     
+<script type="text/javascript" src="js/user/change.js"></script> 
+<script type="text/javascript" src="js/user/xgword.js"></script>     
+<script type="text/javascript" src="js/user/sowing.js"></script> 
+<script type="text/javascript" src="js/user/Invitation.js"></script> 
+
+<script type="text/javascript" src="js/user/mypage.js"></script> 
+<script type="text/javascript" src="js/user/myfollow.js"></script> 
+<script type="text/javascript" src="js/user/mycollection.js"></script> 
+<script type="text/javascript" src="js/user/money.js"></script> 
+<script type="text/javascript" src="js/user/setup.js"></script>  
+<script type="text/javascript" src="js/user/mydisturb.js"></script>  
+<script type="text/javascript" src="js/user/pwdlogin.js"></script>  
+<script type="text/javascript" src="js/user/fbdetail.js"></script>  
+<script type="text/javascript" src="js/user/recharge.js"></script>  
+<script type="text/javascript" src="js/user/myfree.js"></script>  
+<script type="text/javascript" src="js/user/mymission.js"></script>  
+<script type="text/javascript" src="js/user/Advertising.js"></script>  
+<script type="text/javascript" src="js/user/myfkjl.js"></script>  
+<script type="text/javascript" src="js/user/bannerIform.js"></script>  
+<script type="text/javascript" src="js/user/xgwords.js"></script>  
+<script type="text/javascript" src="js/user/modifytype.js"></script>  
+<script type="text/javascript" src="js/user/registered.js"></script>  
+<script type="text/javascript" src="js/user/check.js"></script>  
+<script type="text/javascript" src="js/user/pwIphon.js"></script>  
+
+
+<!-- <script type="text/javascript" src="js/user/video.js"></script>   -->
+
+<script type="text/javascript" src="js/football/Vdetail.js"></script>     
+<script type="text/javascript" src="js/football/whole.js"></script>     
+<script type="text/javascript" src="js/football/Avlist.js"></script>     
+<script type="text/javascript" src="js/football/Avdetails.js"></script>     
+<script type="text/javascript" src="js/football/imchat.js"></script>     
+<script type="text/javascript" src="js/football/imfollow.js"></script>      
+<script type="text/javascript" src="js/football/ranking.js"></script>      
+<script type="text/javascript" src="js/football/gift.js"></script>      
+<script type="text/javascript" src="js/football/Ayhxy.js"></script>      
+<script type="text/javascript" src="js/football/chatdetail.js"></script>      
+<script type="text/javascript" src="js/football/space.js"></script>      
+<script type="text/javascript" src="js/football/Alive.js"></script>      
+
+<script type="text/javascript" src="js/dynamic/dynamic.js"></script>     
+<script type="text/javascript" src="js/dynamic/userdetails.js"></script>  
+<script type="text/javascript" src="js/dynamic/nodisturb.js"></script>  
+<script type="text/javascript" src="js/dynamic/dtfollow.js"></script>  
+<script type="text/javascript" src="js/dynamic/dyShare.js"></script>  
+
+<!-- <script type="text/javascript" src="js/register/zregister.js"></script>      -->
+<!-- <script type="text/javascript" src="js/register/zbrzone.js"></script>      -->
+<!-- <script type="text/javascript" src="js/register/zbrztwo.js"></script>      -->
+<!-- <script type="text/javascript" src="js/register/zbrzthree.js"></script>  -->
+
+<script type="text/javascript" src="js/register/nextportrait.js"></script>     
+<script type="text/javascript" src="js/register/nextName.js"></script>     
+<script type="text/javascript" src="js/register/nextAutograph.js"></script>     
+<script type="text/javascript" src="js/register/nextGender.js"></script>     
+<script type="text/javascript" src="js/register/nextHobby.js"></script>     
+<script type="text/javascript" src="js/register/nextFeeling.js"></script>
+
+
+<script type="text/javascript" src="js/kaijiang/channel.js"></script>     
+<script type="text/javascript" src="js/kaijiang/search.js"></script>     
+<script type="text/javascript" src="js/kaijiang/audioMore.js"></script>     
+<script type="text/javascript" src="js/kaijiang/actress.js"></script>    
+
+<script type="text/javascript" src="js/football/clipboard.min.js"></script>
+
+<script type="text/javascript" src="lib/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="lib/lottie.min.js"></script>
+
+ <!-- <script type="text/javascript" src="js/zepto.js"></script> -->
+    <!-- <script type="text/javascript" src="lib/data.js"></script> -->
+    <!-- <script type="text/javascript" src="js/kaijiang/data.js"></script> -->
+    <!-- <script type="text/javascript" src="lib/swiper3.06.jquery.min.js"></script> -->
+    <script type="text/javascript" src="lib/mobiscroll_date.js"></script>    
+    <script type="text/javascript" src="lib/mobiscroll.js"></script> 
+    <script type="text/javascript" src="lib/LAreaData1.js"></script>
+    <script type="text/javascript" src="lib/LAreaData2.js"></script>
+    <script type="text/javascript" src="lib/LArea.js"></script>
+    <script type="text/javascript" src="lib/TouchSlide.1.1.js"></script> 
+    <script type="text/javascript" src="lib/lCalendar.js"></script> 
+    <script type="text/javascript" src="lib/cropper.min.js"></script> 
+
+<script>
+/*if (ConfigObj.platForm === 'android') {
+  document.write('<script type="text/javascript" src="lib/cordova/cordova.js"><\/script>')
+}else{
+  console.log(126)
+}*/
+</script>
+<!-- <script type="text/javascript" src="lib/video.js"></script> -->
+
+<!-- <script type="text/javascript" src="lib/videojs-contrib-hls.js"></script>  channelId-->
+<!-- <script type="text/javascript" src="lib/cordova/cordova.js"></script>    -->
+<!-- cordova 功能暂时注释  --> 
+<!-- <script>
+  new Clipboard('.btn')
+</script> -->
+	<style>
+        @font-face {
+            font-family: 'PingFangSC-Regular'; 
+            src: url('lib/PingFangRegular.ttf'); 
+            font-weight: normal;
+            font-style: normal;
+         }
+		/* .div_log{position: fixed;width:100%;height:100vh;z-index: 9999;top: 0;background:rgba(0,0,0,0.5);}
+        .div_log .log_im{position: absolute;width:100%;top:50%;left:50%;transform: translate(-50%,-50%);}
+        .div_log .im_log_no{position: absolute;top:6%;right: 0;transform: translate(-50%,-50%);} */
+		#p_jzz{color: #f58ca4;font-size: 16px;margin-top: -80px;}
+        #im_userct{display: none;opacity: 0;}
+        
+        /*#home:after{content: '';position: absolute;right: 0;top: 0;width: 4px;height: 100vh;background:#fff;}*/
+        .div_scrollTop{position: fixed;z-index: 99;bottom: 20%;right: 3%;}
+        @media only screen and (min-width: 320px){html {font-size: 62.5%!important;}}
+        @media only screen and (min-width: 360px){html {font-size: 72.5%!important;}}
+        @media only screen and (min-width: 400px){html {font-size: 82.5%!important;}}
+        @media only screen and (min-width: 480px){html {font-size: 94%!important;}}
+        
+	</style>
+</head>
+<body>
+<div style="width:100%;height:100%;" id="bodymovin">
+    <img class="im_log_no" src="images/my/search_back.png" alt="">
+</div>
+<div class="div_log" style="display: none!important;">
+	<!-- <img class="im_log_no" src="images/my/search_back.png" alt="">
+    <div class="log_im center">
+        <img style="width:100%;" src="images/log.gif" alt="">
+        <p id="p_jzz">加載中...</p>
+    </div> -->
+</div>
+<!-- <div class="div_scrollTop">
+    <img src="images/audio/top.png" alt="">
+</div> -->
+    <p class="iphoneX_rgba"></p>
+<section class="sec_userZl goMoneyHide">
+    <div class="user_zl">
+        <p class="p_kqzb center">溫馨提示<i class="i_guanbi_money gotochongz"></i></p>
+        <p id="" class="ptsrz">免費次數已用完<br/>充值VIP享無限次觀看</p>
+        <p id="" class="p_butt pGquren center">
+            <a class="Akb Agochongz" href="javascript:void(0)"><span class="spkb">去充值</span></a>
+        </p>
+    </div>
+</section>
+<section class="sec_userZl goZhuceHide">
+    <div class="user_zl">
+        <p class="p_kqzb center">溫馨提示<i class="i_guanbi_money gotozhuc"></i></p>
+        <p id="" class="ptsrz">完成注册<br/>即可观看高清视频<br/>参与激情直播</p>
+        <p id="" class="p_butt pGquren center">
+            <a class="Akb Agozhuce" href="javascript:void(0)"><span class="spkb">去注册</span></a>
+        </p>
+    </div>
+</section>
+<section class="sec_userZl moneyAlert">
+    <div class="user_zl">
+        <p class="p_kqzb center">溫馨提示</p>
+        <p id="" class="ptsrz">當前餘額不足，請前往充值</p>
+        <p id="" class="p_butt pGquren">
+            <a class="Aqx Agoquxiao" href="javascript:void(0)"><span style="padding:6px 38px;" class="spqx">取消</span></a>
+            <a class="Akb Agomoney" href="javascript:void(0)"><span class="spkb">去充值</span></a>
+        </p>
+    </div>
+</section>
+<div id="div_pj">
+    <div id="mydiv1" currentIndex="0" class="mydiv center">
+        <p class="p_tit">主播评价</p>
+        <p class="p_lov">喜欢主播么，给个好评吧！</p>
+        <p class="p_xz">选择评分</p>
+        <ul class="star_ul">
+            <li class="lflex" data-t="lipl" num="1"><img src="images/room/gray.png" class="xing_hui"/></li>
+            <li class="lflex" data-t="lipl" num="2"><img src="images/room/gray.png"  class="xing_hui"/></li>
+            <li class="lflex" data-t="lipl" num="3"><img src="images/room/gray.png"  class="xing_hui"/></li>
+            <li class="lflex" data-t="lipl" num="4"><img src="images/room/gray.png"  class="xing_hui"/></li>
+            <li class="lflex" data-t="lipl" num="5"><img src="images/room/gray.png"  class="xing_hui"/></li>
+        </ul>
+        <p class="p_xz ptop">选择评价<span class="sp_thre">（最多选3个）</span></p>
+        <ul id="ullabel" class="uflx bot20">
+            <li class="lflex activpj"><span class="spatex">漂亮</span></li>
+            <li class="lflex"><span class="spatex">漂亮</span></li>
+            <li class="lflex"><span class="spatex">漂亮</span></li>
+        </ul>
+        <p id="pjsub" class="p_tit p_bot"><a class="a_butqr" href="javascript:void(0)">确认</a></p>
+    </div>
+</div>
+
+<div class="bottomcon">
+    <ul class="nav nav-bot clearfix" id="home_navObj" style="display: none;">
+        <li>
+            <a href="javascript:void(0)" data-t="home">
+            <!-- <a href="javascript:void(0)" data-t=""> -->
+                <p><em class="navicons n-lottery"></em></p>
+                <span>視頻</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" data-t="kaijiangIndex">
+            <!-- <a href="javascript:void(0)" data-t=""> -->
+                <p><em class="navicons n-kj"></em></p>
+                <span>聽書</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" data-t="football">
+                <p><em class="navicons n-disc"></em></p>
+                <span>直播</span>
+            </a>
+        </li> 
+        <li>
+            <a href="javascript:void(0)" data-t="dynamic">
+                <p><em class="navicons n-hm"></em></p>
+                <span>動態</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" data-t="mypage">
+                <p><em class="navicons n-user"></em></p>
+                <span>我的</span>
+            </a>
+            <span id="sp_Imnum"><i id="i_ImNum">0</i></span>
+        </li> 
+        <!-- <li>
+            <a href="javascript:void(0)" data-t="userCenter">
+                <p><em class="navicons n-user"></em></p>
+                <span >我的</span>
+            </a>
+        </li> -->
+    </ul>
+</div>
+<div id="im_userct"></div>
+<script type="text/javascript">
+	/*var clipboard = new Clipboard('#Awm');
+	clipboard.on('success', function(e) {
+  	var ms = e.trigger.getAttribute('aria-label');
+  	$.alertMsg(ms,true)
+    	e.clearSelection();
+	});*/
+    
+window.onload=function(){
+    var poData= {access_token: loginObj.access_token}
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+      // Global.usNoetu() channelId
+function loginout(){
+    if (navigator.onLine) { //正常工作 
+        layer.open({
+            className: 'popuo-login',
+            content: '您确定要退出登录？',
+            btn: ['确认', '取消'],
+            shadeClose: false,
+            yes: function(){
+                $.ajax({
+                    url:ConfigObj.localSite + '?version=1&m=user.account.center',
+                    async: false,
+                    success: function(data){
+                        location.href = "jy://OpenLogout";
+                        layer.closeAll();
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown){
+                        layer.closeAll();
+                        alert('网络异常');
+                    }
+                 });
+                 
+            }, no: function(){
+                layer.closeAll();
+            }
+        }); 
+    } else {
+        //执行离线状态时的任务
+        alert('网络异常');
+    }
+}
+function checkedition(){
+    location.href = "jy://CheckVersion";
+}
+function uppwd(){
+    location.href = "<{$siteurl.appformerchant.url}>/appuser/updatepwd?newActivity=1";
+}
+
+
+/*var iof = $.parseJSON(Global.crypt(""
+));
+console.log(iof)*/
+// console.log($.parseJSON(Global.encrypt("")))
+
+document.body.addEventListener('touchstart',function(){});
+	// Global.usNo()//充值
+getUnRead() // 獲取聊天消息總數的
+Global.initNav();      //底部导航功能
+Global.gotoMoney()    //  餘額不足去充值  
+// Global.checkUpdate();  //检查版本更新 
+// Global.channelId()
+GifImg()
+if(ConfigObj.platForm == 'android' && typeof android_obj != 'undefined'){
+  if(!Global.addBackEvent){  //手机硬键的返回事件
+    Global.addBackEvent =  true;
+    /*document.addEventListener('deviceready', function () {
+      document.addEventListener("backbutton", exitMyapp, false);
+    }, false);*/
+    function onDeviceReady() {
+        // 注册事件监听
+        document.addEventListener("backbutton", exitMyApp, false);
+    }
+    var currentTime,firstTime,secondTime,clickCount=0;
+    function exitMyapp() {
+        var checkInput = function () {
+            // 获得焦点的元素
+            var elem = document.querySelectorAll(':focus');
+            if (elem.length) {
+                var focusElem = elem[0];
+                console.dir(focusElem);
+                if (focusElem.tagName == 'TEXTAREA'
+                    || (focusElem.tagName == 'INPUT'
+                    && ['text', 'password', 'tel', 'url', 'number', 'range', 'search'].indexOf(focusElem.type) != -1))
+                    return focusElem;
+            }
+            return null;
+        };
+
+        var checkResult = checkInput();
+
+        if (checkResult) {
+              // 失去焦点
+            checkResult.blur();
+        } else {
+          	var pageId = Global.getActivePage()[0].id;
+          	if(ConfigObj.showWhere){
+            	switch (pageId){
+            	case 'home':
+        			clickCount++;
+        			android_obj.exit('再按一次退出');
+        			currentTime = new Date();
+                	if (clickCount == 1) {
+                  		firstTime=currentTime.getSeconds()+currentTime.getMinutes()*60+currentTime.getHours()*3600;
+                	} else if(clickCount == 2){
+                  		secondTime=currentTime.getSeconds()+currentTime.getMinutes()*60+currentTime.getHours()*3600;
+                  		if(secondTime-firstTime<2){  
+                    		navigator.app.exitApp();
+                        }else {  
+                              clickCount=0;  
+                        }; 
+                	};
+                break;
+                case 'dynamic':
+                    if ($('.duoImg').css('display') == 'none') {
+                        homeObj.show();
+                        Global.fixd()
+                    }else{
+                        $('.sec_ban_img').hide()
+                    }
+                break;
+            	default:
+	                if (window[pageId + 'Obj']) {
+	                    window[pageId + 'Obj'].goBack();
+	                } else {
+	                    homeObj.show();
+	                    Global.fixd()
+	                }
+                break;
+        		}
+        	} else{
+	            switch (pageId){
+	            case 'indexNews':
+	        		clickCount++;
+	        		android_obj.exit('再按一次退出');
+	        		currentTime = new Date();
+	                if (clickCount == 1) {
+	                  firstTime=currentTime.getSeconds()+currentTime.getMinutes()*60+currentTime.getHours()*3600;
+	                } else if(clickCount == 2){
+	          			secondTime=currentTime.getSeconds()+currentTime.getMinutes()*60+currentTime.getHours()*3600;
+	          			if(secondTime-firstTime<2){  
+	            			navigator.app.exitApp();
+	                    }else {  
+	                    clickCount=0;  clickCount=0;  
+	                    }; 
+	        		};
+                break;
+                case 'home':
+                    clickCount++;
+                    android_obj.exit();
+                    currentTime = new Date();
+                    if (clickCount == 1) {
+                      firstTime=currentTime.getSeconds()+currentTime.getMinutes()*60+currentTime.getHours()*3600;
+                    } else if(clickCount == 2){
+                    secondTime=currentTime.getSeconds()+currentTime.getMinutes()*60+currentTime.getHours()*3600;
+                    if(secondTime-firstTime<2){  
+                        navigator.app.exitApp();
+                    }else {  
+                        clickCount=0;  
+                    }; 
+                  };
+                break;
+                case 'dynamic':
+                    if ($('.duoImg').css('display') == 'none') {
+                        homeObj.show();
+                        Global.fixd()
+                    }else{
+                        $('.sec_ban_img').hide()
+                    }
+                break;
+            	default:
+	                if (window[pageId + 'Obj']) {
+	                    window[pageId + 'Obj'].goBack();
+	                } else {
+	                    homeObj.show();
+	                    Global.fixd()
+	                }
+                break;
+        		}
+            }
+        }
+      }
+  } 
+}
+if(ConfigObj.platForm == 'ios'){
+  document.addEventListener('deviceready',function(){
+    if(typeof StatusBar != 'undefined'){
+      StatusBar.hide(); 
+    }
+  },false)
+}
+Global.checkRoute();   //检查路由
+
+document.addEventListener('touchend', function (e) {
+});
+</script>
+
+</body> 
+
+</html>

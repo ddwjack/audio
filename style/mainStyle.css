@@ -1,0 +1,643 @@
+/*字体初始化*/
+@media only screen and (max-width: 340px) and (min-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 380px) and (min-width: 340px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 410px) and (min-width: 380px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 440px) and (min-width: 410px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 470px) and (min-width: 440px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 470px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+}
+/*全局样式*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/*初始化html,body*/
+#kaijiangIndex{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "微软雅黑";
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  position: relative;
+}
+/*清除浮动*/
+#kaijiangIndex .clear {
+  clear: both;
+}
+/*隐藏元素*/
+#kaijiangIndex .hide {
+  display: none;
+}
+/* iconfont ,样式初定义*/
+@font-face {
+  font-family: "iconfont";
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/iconfont.woff') format('woff'), /* chrome、firefox */ url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../font/iconfont.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+#kaijiangIndex .iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*icon定义结束*/
+#kaijiangIndex .mian_con {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4rem 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+#kaijiangIndex .con_mainUP {
+  width: 100%;
+  /*height: 100%;*/
+  height: 93%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4rem 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  /*background-image: url(../images/pageBg/1.jpg);*/
+  background: #fff;
+}
+#kaijiangIndex .con_mainDown {
+  width: 100%;
+  /*height: 100%;*/
+  height:93%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4rem 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url(../images/pageBg/1.jpg);
+  transform: translate3D(0, 100%, 0);
+  -webkit-transform: translate3D(0, 100%, 0);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+#kaijiangIndex .conUp_header {
+  width: 100%;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+}
+#kaijiangIndex .con_footer {
+  width: 100%;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+}
+#kaijiangIndex .con_container {
+  width: 100%;
+  height: 95%;
+  overflow: hidden;
+  position: relative;
+  overflow-y: auto;
+}
+#kaijiangIndex .pageA_title {
+  width: 100%;
+  height: 100%;
+  padding: 0 4rem;
+  text-align: center;
+  line-height: 4rem;
+}
+#kaijiangIndex .moreThat {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 4rem;
+}
+#kaijiangIndex .moreThat i {
+  font-size: 1.8rem;
+}
+#kaijiangIndex .pageTimeLine {
+  width: 100%;
+  height: 0.6rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#kaijiangIndex .pageTimeLine div {
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#kaijiangIndex .pageA_singerImg {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  padding: 0.5rem;
+}
+#kaijiangIndex .pageA_singerImg img {
+  width: 100%;
+  height: 100%;
+}
+#kaijiangIndex .nowSong_information {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 6rem 0.7rem 3.8rem;
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+#kaijiangIndex .nowSong_information p:first-child {
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+#kaijiangIndex .pageA_musicElemnt {
+  width: 7rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#kaijiangIndex .pageA_musicElemnt span {
+  height: 100%;
+  float: left;
+  margin-right: 0.5rem;
+  line-height: 4rem;
+}
+#kaijiangIndex .pageA_musicElemnt span i {
+  font-size: 1.8rem;
+}
+#kaijiangIndex .misicClassList {
+  width: 100%;
+  padding: 5px;
+  list-style: none;
+}
+#kaijiangIndex .misicClassList li {
+  float: left;
+  padding: 5px;
+  height: 121px;
+  width: 121px;
+  line-height: 111px;
+}
+#kaijiangIndex .misicClassList span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#kaijiangIndex .misicClassList .showNow span {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#kaijiangIndex .misicClassList .playNow span {
+  background-image: url(../images/icon/music_30.png);
+  background-repeat: no-repeat;
+  background-position: -0.5rem 0.1rem;
+  background-size: 3rem 3rem;
+}
+#kaijiangIndex .returnOnePage {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.3rem;
+}
+#kaijiangIndex .pageB_songName {
+  width: 100%;
+  padding: 0 4rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+#kaijiangIndex .pageB_singerName {
+  width: 100%;
+  padding: 0 4rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+#kaijiangIndex .pageB_songName:after {
+  clear: both;
+}
+#kaijiangIndex .songList {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  list-style: none;
+}
+#kaijiangIndex .songList li {
+  height: 3rem;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+}
+#kaijiangIndex .songList .songNumber {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 3rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}
+#kaijiangIndex .songList .thisHeart {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 3rem;
+}
+#kaijiangIndex .songList .thisHeart i {
+  font-size: 1.5rem;
+}
+#kaijiangIndex .songList .Find {
+  color: red;
+}
+#kaijiangIndex .songList li:last-child {
+  border-bottom: none;
+}
+#kaijiangIndex .songListInformation {
+  width: 100%;
+  height: 100%;
+  padding: 0.1rem 3rem;
+}
+#kaijiangIndex .songListInformation p {
+  overflow: hidden;
+}
+#kaijiangIndex .songListInformation p:first-child {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+}
+#kaijiangIndex .songListInformation p:last-child {
+  font-size: 0.7rem;
+}
+#kaijiangIndex .paluMode {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 4rem;
+  text-align: center;
+}
+#kaijiangIndex .paluMode i {
+  font-size: 1.8rem;
+  display: none;
+}
+#kaijiangIndex .paluMode i:first-child {
+  display: inline;
+}
+#kaijiangIndex .nowHeart {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 4rem;
+}
+#kaijiangIndex .nowHeart i {
+  font-size: 1.6rem;
+  display: none;
+}
+#kaijiangIndex .nowHeart i:first-child {
+  display: block;
+}
+#kaijiangIndex .nowHeart .red {
+  color: red;
+}
+#kaijiangIndex .pageB_play {
+  width: 100%;
+  height: 100%;
+  padding: 0 4rem;
+  text-align: center;
+  line-height: 4rem;
+}
+#kaijiangIndex .pageB_play span {
+  padding: 0 0.2rem;
+}
+#kaijiangIndex .pageB_play i {
+  font-size: 1.8rem;
+}
+#kaijiangIndex .pageB_play .playB_playStop i {
+  font-size: 2rem;
+}
+#kaijiangIndex .pageB_play .playB_playStop i:nth-child(2) {
+  display: none;
+}
+#kaijiangIndex .pageB_line {
+  width: 100%;
+  height: 0.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#kaijiangIndex .pageB_line div {
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#kaijiangIndex .songTime {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+#kaijiangIndex .songTime .nowTime {
+  float: left;
+}
+#kaijiangIndex .songTime .allTime {
+  float: right;
+}
+#kaijiangIndex .pageB_nowPage {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  text-align: center;
+  line-height: 0.5rem;
+}
+#kaijiangIndex .pageB_nowPage span {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+#kaijiangIndex .pageB_nowPage .active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#kaijiangIndex .pageBArr {
+  width: 100%;
+  height: 100%;
+}
+#kaijiangIndex .lyrics_list {
+  width: 100%;
+  list-style: none;
+  transform: translate3D(0, 50%, 0);
+  -webkit-transform: translate3D(0, 50%, 0);
+}
+#kaijiangIndex .lyrics_list li {
+  height: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+#kaijiangIndex .lyrics_list .active {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+#kaijiangIndex .pageB_SingerImg {
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  margin-top: -7.5rem;
+  margin-left: -7.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem #000;
+  -webkit-box-shadow: 0 0 2rem #000;
+}
+#kaijiangIndex .pageB_SingerImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+@keyframes Runing {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes Runing {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+#kaijiangIndex .Warming {
+  transform: translate3D(110%, 0, 0);
+  -webkit-transform: translate3D(110%, 0, 0);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+#kaijiangIndex .warming_con {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+  font-size: 0.8rem;
+  text-align: Justify;
+  text-justify: inter-ideograph;
+}
+#kaijiangIndex .warming_con h3 {
+  padding-top: 0.5rem;
+  font-weight: normal;
+}
+#kaijiangIndex .warming_con ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+#kaijiangIndex .warming_con ul li {
+  margin-top: 0.3rem;
+  text-indent: 1rem;
+}
+#kaijiangIndex .warming_con ul li:first-child {
+  margin-top: 0;
+}
+#kaijiangIndex .returnMain {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  line-height: 4rem;
+}
+#kaijiangIndex .returnMain i {
+  font-size: 1.5rem;
+}
+#kaijiangIndex .lodingCon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../images/pageBg/load.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+}
+#kaijiangIndex .affrimLoad {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  right: 4rem;
+  top: 10rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
+  display: none;
+}
+#kaijiangIndex .affrimLoad div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
+}
+#kaijiangIndex .affrimLoad div:nth-child(1) {
+  animation: makeBig 4s linear infinite;
+  -webkit-animation: makeBig 4s linear infinite;
+}
+#kaijiangIndex .affrimLoad div:nth-child(2) {
+  animation: makeBigB 4s linear infinite;
+  -webkit-animation: makeBigB 4s linear infinite;
+}
+#kaijiangIndex .affrimLoad span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 1.5rem;
+}
+@keyframes makeBig {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+}
+@-webkit-keyframes makeBig {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+}
+@keyframes makeBigB {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+  }
+}
+@-webkit-keyframes makeBigB {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+  }
+}

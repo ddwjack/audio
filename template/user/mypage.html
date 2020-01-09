@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title></title>
+<!-- <link rel="stylesheet" href="css/global.css"/> -->
+<style>
+</style>
+</head>
+<body>
+<div class="wrapper" id="mypage">
+	<p></p>
+	<header class="head_pag padTopX">
+		<p id="setUp" class="p_imgsz"><img class="img_sz" src="images/my/sz.png" alt=""></p>
+		<ul id="div_names" class="ul_pat">
+			<li data-t="zhgl" class="vegTop w75">
+				<img class="fl im_my" src="images/room/log.png" alt="">
+				<p class="my_nam">暱稱<i class="i_icon_wan"></i><i class="i_icon_xiu"></i></p>
+				<p class="my_iph">手機號</p>
+				<p class="my_jia">個性簽名</p>
+			</li>
+			<li data-t="yjyqm" class="vegTop w25 center fons1">
+				<img class="wi48" src="images/me/day1.png" alt="">
+				<p class="my_yjy">有奖邀请码</p>
+				<p id="pYqms" class="my_yqm"></p>
+			</li>
+		</ul>
+	</header>
+	<section class="my_cont">
+		<ul class="fle_ty">
+			<li data-t="gomoney" class="liFlex licol">
+				<img src="images/my/jiang.png" alt="">
+				<p class="Ptext">金幣</p>
+				<p id="p_myMoney" class="Pnumb">0</p>
+			</li>
+			<li data-t="liIm" class="liFlex licol">
+				<img src="images/my/im.png" alt="">
+				<p class="Ptext">聊天</p>
+				<p id="p_myIm" class="Pnumb">0</p>
+			</li>
+			<li data-t="guanzhu" class="liFlex licol">
+				<img src="images/my/gz.png" alt="">
+				<p class="Ptext">关注</p>
+				<p id="p_myFlo" class="Pnumb">0</p>
+			</li>
+			<li data-t="wdxh" class="liFlex licol">
+				<img src="images/my/sc.png" alt="">
+				<p class="Ptext">收藏</p>
+				<!-- <p class="Pnumb">0/0/0</p> -->
+			</li>
+		</ul>
+		<div class="divLis">
+			<ul class="listUl licol">
+				<li data-t="wytg" class="li_w10"><img src="images/my/shipin-4.png" alt=""></li>
+				<li data-t="wytg" class="li_w30">免费观影</li>
+				<li data-t="wytg" class="li_w60"><span id="p_numbe"></span><i class="i_fan"></i></li>
+			</ul>
+			<ul class="listUl licol">
+				<li data-t="hbjlq" class="li_w10"><img src="images/my/chengyuan.png" alt=""></li>
+				<li data-t="hbjlq" class="li_w30">加入群聊</li>
+				<li data-t="hbjlq" class="li_w60">精彩内容，群分享<i class="i_fan"></i></li>
+			</ul>
+			<ul class="listUl licol">
+				<li data-t="lsjls" class="li_w10"><img src="images/my/shizhong.png" alt=""></li>
+				<li data-t="lsjls" class="li_w30">历史记录</li>
+				<li data-t="lsjls" class="li_w60">视频、听书全在这<i class="i_fan"></i></li>
+			</ul>
+			<ul class="listUl licol" style="display: none;">
+				<li data-t="wdhc" class="li_w10"><img src="images/my/bofang-3.png" alt=""></li>
+				<li data-t="wdhc" class="li_w30">离线视频</li>
+				<li data-t="wdhc" class="li_w60">没网也能看视频<i class="i_fan"></i></li>
+			</ul>
+			
+			<ul class="listUl licol">
+				<li data-t="rwzx" class="li_w10"><img src="images/my/tishi.png" alt=""></li>
+				<li data-t="rwzx" class="li_w30">任务中心</li>
+				<li data-t="rwzx" class="li_w60">今日可增加100经验<i class="i_fan"></i></li>
+			</ul>
+			<ul class="listUl licol">
+				<li data-t="yjfk" class="li_w10"><img src="images/my/bianji-2.png" alt=""></li>
+				<li data-t="yjfk" class="li_w30">意见反馈</li>
+				<li data-t="yjfk" class="li_w60">提建议，赢壕礼<i class="i_fan"></i></li>
+			</ul>
+			<ul class="listUl licol">
+				<li data-t="distur" class="li_w10"><img src="images/my/jinyong.png" alt=""></li>
+				<li data-t="distur" class="li_w30">免打扰设置</li>
+				<li data-t="distur" class="li_w60"><span id="mian_dist" class="fr mySpan_tp nulTyp"></span></li>
+				<!-- <li data-t="distur" class="li_w60">拒绝骚扰<i class="i_fan"></i></li> -->
+			</ul>
+			<ul class="listUl licol aftNo">
+				<li data-t="AlogType" class="li_w10"><img src="images/my/jinyong.png" alt=""></li>
+				<li data-t="AlogType" class="li_w30">记住登录状态</li>
+				<li data-t="AlogType" class="li_w60"><span id="spandata" class="fr mySpan_tp nulTyp"></span></li>
+				<!-- <li data-t="AlogType" class="li_w60"><span class="fr mySpan_tp nulTyp offTyp"></span></li> -->
+			</ul>
+		</div>
+	</section>
+	<section class="centerWrap" id="" style="padding:10px 16px 70px;">
+        <div style="position:relative;">
+            <div class="banner" style="background:#fff;height:146px;">
+                <div class="banner" style="width:100%;margin:0px auto;">
+                    <ul class="banner_scroll" id="page_bannerImgObj">
+                    <!-- <ul class="banner_scroll" id=""> -->
+                        <li data-v="/activity/regnewBonus" data-weburl="" style="transition: all 0s ease; transform: translate3d(0px, 0px, 0px);">
+                            <a><img src="images/my/copy.png"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="page_scroll" ><p class="page" id="user_NavWarpObj"></p></div> -->
+                <!-- <div id="back-white"></div> -->
+            </div>
+        </div>
+	</section>
+</div>
+</body>
+
+</html>
